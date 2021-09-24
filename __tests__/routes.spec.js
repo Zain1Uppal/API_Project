@@ -39,7 +39,7 @@ describe('api routes', () => {
             .expect({ message: `done adding`})
             .expect(201, done)
     })
-    test('GET /trash', (done) => {
+    test('GET /random', (done) => {
         request(api)
             .get('/random')
             .expect(404, done)
